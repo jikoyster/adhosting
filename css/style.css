@@ -1,0 +1,8 @@
+.background{
+    position: absolute;
+    
+    font-size: 30em;
+    color: #f00;
+
+    z-index: -1;
+}
