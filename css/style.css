@@ -1,8 +1,55 @@
-.background{
-    position: absolute;
-    
-    font-size: 30em;
-    color: #f00;
-
-    z-index: -1;
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #fff url("images/background.jpg") no-repeat center center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.ubox {
+  width: 68%;
+  background-color: #fff;
+  font-size: small;
+  font-weight: 700;
+  border: 1px solid #666;
+}
+.topbox {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  text-transform: uppercase;
+}
+.class-lg .ubox {
+  width: 50%;
+  left: 25%;
+}
+.class-lg .topbox {
+  font-size: 1.5em;
+}
+.class-lg .topbox p {
+  font-size: 0.8em;
+}
+.class-lg .topbox a {
+  font-size: 1em;
+}
+.class-lg .topbox a:hover {
+  color: #666;
+}
+.class-sm .topbox {
+  top: 45%;
+}
+.class-sm .topbox p {
+  font-size: 1em;
+}
+.class-sm .topbox a {
+  font-size: 1em;
+}
+.class-sm .topbox a:hover {
+  color: #666;
+}
+.sm-box a {
+  display: block;
+  overflow: hidden;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
 }

@@ -1,0 +1,79 @@
+@text-color: #fff;
+@sm-text-color: #000;
+@bgURL: url("./images/background.jpg");
+
+@box-border: #666;
+@box-hover: #eee;
+@box-bg: #fff;
+@box-width: 68%;
+@lg-box-width: 50%;
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: #fff @bgURL no-repeat center center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.ubox{
+    width: @box-width;
+    background-color: @box-bg;
+    font-size: small;
+    font-weight: 700;
+    border: 1px solid @box-border;
+}
+.topbox{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+
+    text-transform: uppercase;   
+}
+.class-lg{
+    .ubox{
+        width: @lg-box-width;
+        left: 25%;
+    }
+    .topbox{
+        font-size: 1.5em;
+
+        p{
+            font-size: .8em;
+        }
+        a{
+            font-size: 1em;
+        }
+        a:hover{
+            color: #666;
+        }
+    }
+}
+.class-sm{
+    .topbox{
+        top: 45%;
+        p{
+            font-size: 1em;
+        }
+        a{
+            font-size: 1em;
+        }
+        a:hover{
+            color: #666;
+        }
+    }
+}
+
+
+.sm-box{
+    
+
+    a{
+        display: block;   
+        overflow: hidden;
+        color: @sm-text-color;    
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    
+}
